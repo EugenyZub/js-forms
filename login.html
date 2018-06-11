@@ -25,24 +25,30 @@
 		</div>
 
 		<form id="enter-form" class="plate" action="success.html" novalidate >
-			<div class="form__group">
+			
 				<div class="plate__heading">Вход на сайт</div>
-			<!--<div class="error">Введите email</div>
-			<div class="error">Неверный формат email</div>
-			<div class="error">Введите пароль</div>
-			<div class="error error--with-desc">Неверный email или пароль</div>
-			<div class="error-description">
-				<p>Введите верные данные для входа или воспользуйтесь <a href="#">восстановлением пароля, </a>чтобы войти на сайт.</p>
-			</div>-->
-			<input class="input" type="text" placeholder="Введите имя" name="name"/>
-			<input class="input" type="password" placeholder="Пароль" name="password"/>
-			<div class="plate__links">
-				<label class="label form__label-checkbox">
-					<input class="form__input-checkbox" type="checkbox"/><span class="form__checkbox"> </span>Запомнить меня
-				</label><a class="link" href="#">Забыл пароль</a>
-			</div>
+				<!--<div class="error">Введите email</div>
+				<div class="error">Неверный формат email</div>
+				<div class="error">Введите пароль</div>
+				<div class="error error--with-desc">Неверный email или пароль</div>
+				<div class="error-description">
+					<p>Введите верные данные для входа или воспользуйтесь <a href="#">восстановлением пароля, </a>чтобы войти на сайт.</p>
+				</div>-->
+				<div class="form__group">
+					<input class="input" type="text" placeholder="Введите email" name="email" id="email" data-error-empty="Email не должен быть пустым" data-error-format="Email неверного формата" email-or-password-error="Неверный email или пароль" data-fvalid="required"/>
+				</div>
+
+				<div class="form__group">
+					<input class="input" type="password" placeholder="Пароль" name="password" id="password" data-error-empty="Пароль не должен быть пустым" data-fvalid="required" />
+				</div>
+				
+				<div class="plate__links">
+					<label class="label form__label-checkbox">
+						<input class="form__input-checkbox" type="checkbox"/><span class="form__checkbox"> </span>Запомнить меня
+					</label><a class="link" href="#">Забыл пароль</a>
+				</div>
 			<!--<a class="button button--login" href="#">Войти<span class="button__icon button__icon--right"><i class="fas fa-angle-right"> </i></span></a>-->
-		</div>
+			
 			<input class="button button--login" type="submit" value="Войти">
 
 		</form>
