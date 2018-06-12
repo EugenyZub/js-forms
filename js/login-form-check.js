@@ -108,8 +108,14 @@ $(document).ready(function(){
 								//console.log('Неверные email и/или пароль');
 								formField.addClass('error');
 								tooltip = $('<span class="form__tooltip ">' + 'Неверный email или пароль' + '</span>');
+								tooltipeDescription = $('<p class = "tooltipe__Description">' + 
+														'Введите верные данные для входа или воспользуйтесь' + 
+														'<a href="#">' + ' восстановлением пароля,' + '</a>' + 
+														' чтобы войти на сайт.' + '</p>');
 								formField.find('.form__tooltip').remove();
+								formField.find('.tooltipe__Description').remove();
 								tooltip.appendTo(formField);
+								tooltipeDescription.appendTo(formField);
 						}
 			},
 		};	
