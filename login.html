@@ -34,14 +34,16 @@
 				<div class="error-description">
 					<p>Введите верные данные для входа или воспользуйтесь <a href="#">восстановлением пароля, </a>чтобы войти на сайт.</p>
 				</div>-->
-				<div class="form__group">
-					<input class="input" type="text" placeholder="Введите email" name="email" id="email" data-error-empty="Email не должен быть пустым" data-error-format="Email неверного формата" email-or-password-error="Неверный email или пароль" data-fvalid="required"/>
+				<div class="form__error">
+					<div class="form__group">
+						<input class="input" type="text" placeholder="Введите email" name="email" id="email" data-error-empty="Email не должен быть пустым" data-error-format="Email неверного формата" email-or-password-error="Неверный email или пароль" data-fvalid="required"/>
+					</div>
+
+					<div class="form__group">
+						<input class="input" type="password" placeholder="Пароль" name="password" id="password" data-error-empty="Пароль не должен быть пустым" data-fvalid="required" />
+					</div>
 				</div>
 
-				<div class="form__group">
-					<input class="input" type="password" placeholder="Пароль" name="password" id="password" data-error-empty="Пароль не должен быть пустым" data-fvalid="required" />
-				</div>
-				
 				<div class="plate__links">
 					<label class="label form__label-checkbox">
 						<input class="form__input-checkbox" type="checkbox"/><span class="form__checkbox"> </span>Запомнить меня

@@ -14,7 +14,7 @@
 }
 /* ERRORS */
 
-.form__group.error {
+.form__group.error, .form__error.error {
 	/*background-color: #E0E1EB;*/
 	background-color: rgba(18, 45, 61, 0.6);
   	opacity: 1;
