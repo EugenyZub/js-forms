@@ -100,10 +100,10 @@ $(document).ready(function(){
 					});
 				});
 
-				if ( (value1 == 'mail@mail.ru') && (value2 == '123') ) {
+				if ( (value1 == 'mail@mail.com') && (value2 == '123') ) {
 					window.location= "success.html";
 				} else if (  ( (pattern.test(value1)) && value1.length > 0 && value2.length > 0 ) &&
-						  ( (value1 != 'mail@mail.ru') || (value2 != '123') )
+						  ( (value1 != 'mail@mail.com') || (value2 != '123') )
 						) {
 								//console.log('Неверные email и/или пароль');
 								formField.addClass('error');
