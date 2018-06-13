@@ -112,7 +112,7 @@ $(document).ready(function(){
 								formField.find('.tooltipe__Description').remove();
 								tooltip.appendTo(formField);
 								tooltipeDescription.appendTo(formField);
-				} else if (( (pattern.test(value1)) && value1.length > 0 &&
+					} else if (( (pattern.test(value1)) && value1.length > 0 &&
 						  		value2.length > 0 ) && ( value1 != 'mail@mail.com' )) {
 							window.location= "success.html";
 						  }		

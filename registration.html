@@ -24,31 +24,24 @@
 		</div>
 		<form id="registration-form" class="plate" action="success.html">
 			<div class="plate__heading">Регистрация</div>
-		<!--	<div class="error">Введите email</div>
-			<div class="error">Неверный формат email</div>
-			<div class="error">Введите пароль</div>
-			<div class="error error--with-desc">Данный email уже занят</div>
-			<div class="error-description">
-				<p>Используйте другой email чтобы создать новый аккаунт.</p>
-				<p>Или воспользуйтесь <a href="#">восстановлением пароля</a>, чтобы войти на сайт.</p>
+
+			<div class="form__error">
+				<div class="form__group">
+					<input class="input" type="text" placeholder="Введите email" name="email"/>
+				</div>
+				<div class="form__group">
+					<input class="input" type="password" placeholder="Пароль" name="password"/>
+				</div>
 			</div>
-		-->
-		<div class="form__error">
-			<div class="form__group">
-				<input class="input" type="text" placeholder="Введите email" name="email"/>
-			</div>
-			<div class="form__group">
-				<input class="input" type="password" placeholder="Пароль" name="password"/>
-			</div>
-		</div>
 
 			<div class="plate__links">
 				<label class="label form__label-checkbox">
 					<input class="form__input-checkbox" type="checkbox"/><span class="form__checkbox"> </span>Запомнить меня
 				</label><a class="link" href="#">Забыл пароль</a>
 			</div>
-			<!--<a class="button button--login" href="#">Регистрация<span class="button__icon button__icon--right"><i class="fas fa-angle-right"> </i></span></a>-->
+
 			<input class="button button--login" type="submit" value="Регистрация"> 
+			
 		</form>
 		<div class="login-footer">
 			<p>&copy; Юрий Ключевский</p>
