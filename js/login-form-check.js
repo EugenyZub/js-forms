@@ -82,11 +82,11 @@ $(document).ready(function(){
 						formGroup2.find('.form__tooltip').remove();
 						tooltip.appendTo(formGroup2);
 						//console.log('пустой пароль');
-					} else {
-      					formGroup2.removeClass('error');
-      					formGroup2.find('.form__tooltip').remove();
-						//console.log('Удаление класса с ошибкой password');
-					}
+						} else {
+	      					formGroup2.removeClass('error');
+	      					formGroup2.find('.form__tooltip').remove();
+							//console.log('Удаление класса с ошибкой password');
+							}
 
 					// Hide errors
 					input2.on('focus', function(){
@@ -116,7 +116,7 @@ $(document).ready(function(){
 								formField.find('.tooltipe__Description').remove();
 								tooltip.appendTo(formField);
 								tooltipeDescription.appendTo(formField);
-						}
+							}
 			},
 		};	
 
