@@ -7,3 +7,25 @@
   margin-top: 55px;
   margin-bottom: 55px;
 }
+
+.button{
+	line-height: 1;
+	padding-top: 0px;
+	
+}
+
+/* ERRORS */
+
+.form__group.error {
+	background-color: #ffebee;
+}
+
+.form__tooltip {
+	background: #e44845;
+	padding: 0.9375rem 1.25rem;
+	border-radius: 0.25rem;
+	white-space: nowrap;
+	color: #fff; 
+	margin-bottom: 15px;
+	display: block;
+}
